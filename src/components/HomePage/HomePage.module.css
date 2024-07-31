@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+
+  .part1 {
+    margin-left: 25rem;
+    width: 100%;
+
+    .part2 {
+      padding: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+  }
+}

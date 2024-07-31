@@ -1,0 +1,126 @@
+.sidePane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  height: 100%;
+  background-color: #fbfbfb;
+  padding: 3rem 3rem 6.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  border-right: 0.1rem solid #e4e4e7;
+
+  .part1 {
+    .time {
+      font-size: 3.25rem;
+      letter-spacing: -0.05rem;
+      font-weight: 400;
+    }
+
+    .date {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    .weather {
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .announcements {
+      margin-top: 1.25rem;
+      background-color: #f4f4f5;
+      padding: 1rem;
+      border-radius: 0.5rem;
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 0.7rem;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li {
+        color: #6e6e77;
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .part2 {
+    background-color: #f4f4f5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.7rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      color: #6e6e77;
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      cursor: pointer;
+    }
+
+    ul li .icon {
+      font-size: 1.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .part3 {
+    background-color: #f4f4f5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.7rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      color: #6e6e77;
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+      cursor: pointer;
+    }
+  }
+
+  .part4 {
+    background-color: #fbfbfb;
+    position: fixed;
+    bottom: 0;
+    left: 3rem;
+    width: 19rem;
+    padding: 1.25rem 0 3rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+}

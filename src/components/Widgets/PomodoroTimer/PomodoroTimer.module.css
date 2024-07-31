@@ -1,0 +1,146 @@
+.modal {
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  width: clamp(25rem, 48%, 48%);
+  height: 28rem;
+  border: 0.1rem solid #e4e4e7;
+
+  .header {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .pomodoroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    .timerDisplay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+
+      .timerLabel {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
+      }
+
+      .timerValue {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
+      }
+
+      .timerControls {
+        display: flex;
+        gap: 0.625rem;
+
+        .timerButton {
+          background-color: #18181b;
+          color: white;
+          border: none;
+          padding: 0.625rem 1.25rem;
+          border-radius: 0.3125rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #18181b;
+          }
+        }
+      }
+    }
+
+    .lengthControls {
+      display: flex;
+      gap: 2.5rem;
+      margin-bottom: 1.25rem;
+
+      .lengthControl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .lengthButtons {
+          display: flex;
+          align-items: center;
+          gap: 0.3125rem;
+
+          .lengthButton {
+            background-color: #18181b;
+            color: white;
+            border: none;
+            padding: 0.3125rem 0.625rem;
+            border-radius: 0.3125rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+              background-color: #18181b;
+            }
+          }
+        }
+
+        .lengthValue {
+          font-size: 1.5rem;
+          font-weight: bold;
+          padding: 0 0.625rem;
+        }
+
+        .lengthLabel {
+          margin-top: 0.625rem;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .breakTimer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+
+      .breakLabel {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
+      }
+
+      .breakValue {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
+      }
+
+      .breakControls {
+        display: flex;
+        gap: 0.625rem;
+
+        .breakButton {
+          background-color: #18181b;
+          color: white;
+          border: none;
+          padding: 0.625rem 1.25rem;
+          border-radius: 0.3125rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #18181b;
+          }
+        }
+      }
+    }
+  }
+}

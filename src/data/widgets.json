@@ -1,0 +1,12 @@
+[
+  { "id": "quotes", "title": "Quotes" },
+  { "id": "pomodoroTimer", "title": "Pomodoro Timer" },
+  { "id": "googleSlide", "title": "Google Slide" },
+  { "id": "googleSpreadsheet", "title": "Google Spreadsheet" },
+  { "id": "googleForm", "title": "Google Form" },
+  { "id": "music", "title": "Music" },
+  { "id": "polls", "title": "Polls" },
+  { "id": "issueTracker", "title": "Issue Tracker" },
+  { "id": "dgc", "title": "DGC" },
+  { "id": "opportunityBoard", "title": "Opportunity Board" }
+]
