@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { IoMdSettings } from "react-icons/io";
 import Settings from "../Settings/Settings";
 import announcements from "../../data/announcements.json";
 import tips from "../../data/tips.json";
 import styles from "./SidePane.module.css";
+import { ToggleContext } from "../../context/ToggleContext";
 
 const SidePane = () => {
   const [dateTime, setDateTime] = useState(new Date());
   const [topSites, setTopSites] = useState([]);
   const [showSettings, setShowSettings] = useState(false);
   const [randomTips, setRandomTips] = useState([]);
-  const [location, setLocation] = useState(
-    localStorage.getItem("location") || "New York"
-  );
+  const { location } = useContext(ToggleContext);
   const [weather, setWeather] = useState({});
 
   const handleOpenSettings = () => {
@@ -68,11 +67,6 @@ const SidePane = () => {
         });
       })
       .catch((error) => console.error("Error fetching weather data:", error));
-  };
-
-  const handleLocationChange = (newLocation) => {
-    setLocation(newLocation);
-    localStorage.setItem("location", newLocation);
   };
 
   const months = [
@@ -159,13 +153,7 @@ const SidePane = () => {
       <div className={styles.part4}>
         <div>
           <IoMdSettings onClick={handleOpenSettings} />
-          {showSettings && (
-            <Settings
-              handleClose={handleCloseSettings}
-              location={location}
-              onLocationChange={handleLocationChange}
-            />
-          )}
+          {showSettings && <Settings handleClose={handleCloseSettings} />}
         </div>
       </div>
     </div>

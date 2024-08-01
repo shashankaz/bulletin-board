@@ -29,7 +29,7 @@ export const ToggleProvider = ({ children }) => {
   });
 
   const [location, setLocation] = useState(
-    localStorage.getItem("location") || "New York"
+    localStorage.getItem("location") || "Delhi"
   );
 
   useEffect(() => {
@@ -39,6 +39,10 @@ export const ToggleProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("spotify", JSON.stringify(spotify));
   }, [spotify]);
+
+  useEffect(() => {
+    localStorage.setItem("location", location);
+  }, [location]);
 
   const setSpotifyUrl = (url) => {
     const embeddedUrl = url.replace(
@@ -50,7 +54,6 @@ export const ToggleProvider = ({ children }) => {
 
   const updateLocation = (newLocation) => {
     setLocation(newLocation);
-    localStorage.setItem("location", newLocation);
   };
 
   const hideCard = (id) => {
